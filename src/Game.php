@@ -44,11 +44,11 @@ class Game {
         $column = $coords[0];
         $row = $coords[1];
         if ($column < 1 || $column > count($this->_board->getData())) {
-            echo "Please enter an X coordinate in range 1-".count($this->_board->getData())."\n";
+            echo "Please enter a column in range 1-".count($this->_board->getData())."\n";
             return;
         }
         if ($row < 1 || $row > count($this->_board->getData()[0])) {
-            echo "Please enter a Y coordinate in range 1-".count($this->_board->getData()[0])."\n";
+            echo "Please enter a row in range 1-".count($this->_board->getData()[0])."\n";
             return;
         }
         // else select the cell at the given coordinates
